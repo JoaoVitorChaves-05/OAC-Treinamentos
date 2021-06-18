@@ -1,0 +1,65 @@
+.container #main-text {
+    background-image: linear-gradient(to bottom right, rgb(49, 145, 223), darkblue);
+    color: white;
+
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .08fr .08fr;
+    grid-gap: 20px;
+    text-align: center;
+    grid-template-areas: 
+    "main main"
+    "content button"
+}
+
+#main-text  h1 {
+    margin-top: 20px;
+    grid-area: main;
+}
+
+#main-text p {
+    margin: auto;
+    grid-area: content;
+    margin: 5% 5% 5% 5%;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .container #main-text {
+        /*rgb(49, 145, 223), darkblue*/
+        color: white;
+    
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .08fr .08fr;
+        grid-gap: 20px;
+        text-align: center;
+        grid-template-areas: 
+        "main main"
+        "text text"
+        "button button"
+    }
+
+    #main-text  h1 {
+        margin-top: 20px;
+        grid-area: main;
+    }
+
+    #main-text p {
+        margin: auto;
+        grid-area: text;
+        margin: 5% 5% 5% 5%;
+
+    }
+
+    #button {
+        margin-left: 20px;
+        font-size: 100%;
+        border: 0;
+        grid-area: button;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="scripts/nav-bar.js" defer></script>
+    <title>OAC - Cursos e Treinamentos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">OAC - Cursos e Treinamentos</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a class="item-active" href="/cursos">Cursos</a></li>
+                <li><a href="/contato">Atendimento Personalizado</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr id="hr-navbar">
+    <main>
+        <div class="title-page">
+            <h1>Cursos</h1>
+            <p>Carga horária de 8 horas de muita prática e aprendizado</p>
+        </div>
+        <div class="container">
+            <div class="content-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Custos fixos e variáveis</h2>
+                        <span class="second-text">Aprenda a colocar o preço certo no seu produto/serviço.</span>
+                    </div>
+                    <div id="img-custos" class="media-card"></div>
+                    <div class="bottom-card">
+                        <p class="bottom-text">Você sabe qual é o seu custo de produção? Qual o lucro do seu produto? Tem volume de vendas mas não sabe onde foi parar o dinheiro? Se alguma resposta foi não, este é o curso perfeito para você!</p>
+                        <div class="actions-card">
+                            <button class="actions" onclick="showDetails(this)">Detalhes</button>
+                            <button class="actions" onclick="showContact(this)">Reserve a sua vaga</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="top-card">
+                        <h2 class="title">Detalhes do curso</h2>
+                        <span class="second-text">O objetivo do curso é apresentar de forma simples e prática os conceitos de custos dos produtos ou dos serviços, preço de venda e dimensionar seus lucros.</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="title">Conteúdo do curso:</h3>
+                        <ul>
+                            <li>- Custos fixos, rateio.</li>
+                            <li>- Custos variáveis.</li>
+                            <li>- Custo total.</li>
+                            <li>- Despesas.</li>
+                            <li>- Margem de contribuição.</li>
+                            <li>- Ponto de equilíbrio.</li>
+                            <li>- Plano de contas.</li>
+                        </ul>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideDetails(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="top-card">
+                        <h2 class="title">Contato</h2>
+                        <span class="second-text">Entre em contato conosco para garantir esse curso!</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h2 class="title">Preencha este formulário:</h2>
+                        <div class="form-style-6 item">
+                            <form action="/contact-comercial" method="POST">
+                                <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                                <input type="hidden" name="subject" value="Compra - Curso de custos fixos e variáveis">
+                                <input type="text" name="name" placeholder="Nome ou empresa" />
+                                <input type="email" name="email" placeholder="Endereço de e-mail" />
+                                <input type="text" name="phone" id="phone" placeholder="Telefone: (XX) XXXXX-XXXX">
+                                <textarea name="message" placeholder="Como ficou sabendo da gente?"></textarea>
+                                <input type="submit" value="Enviar" />
+                                <input type="hidden" name="redirectTo" value="/contato">
+                            </form>
+                        </div>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideContact(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Ferramentas da qualidade</h2>
+                        <span class="second-text">Descubra quais são as ferramentas para manter a qualidade do seu produto/serviço.</span>
+                    </div>
+                    <div id="img-ferramentas" class="media-card"></div>
+                    <div class="bottom-card">
+                        <p class="bottom-text">Você sabe como manter o padrão de qualidade do seu produto/serviço? Caso não, esse é o curso perfeito para você!</p>
+                        <div class="actions-card">
+                            <button class="actions" onclick="showDetails(this)">Detalhes</button>
+                            <button class="actions" onclick="showContact(this)">Reserve a sua vaga</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="top-card">
+                        <h2 class="title">Detalhes do curso</h2>
+                        <span class="second-text">O objetivo do curso é apresentar de forma simples e prática os conceitos de custos dos produtos ou dos serviços, preço de venda e dimensionar seus lucros.</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="title">Conteúdo do curso</h3>
+                        <ul>
+                            <li>Custos fixos, rateio</li>
+                            <li>Custos variáveis</li>
+                            <li>Custo total</li>
+                            <li>Despesas</li>
+                            <li>Margem de contribuição</li>
+                            <li>Ponto de equilíbrio</li>
+                            <li>Plano de contas</li>
+                        </ul>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideDetails(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="top-card">
+                        <h2 class="title">Contato</h2>
+                        <span class="second-text">Entre em contato conosco para garantir esse curso!</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h2 class="title">Preencha este formulário:</h2>
+                        <div class="form-style-6 item">
+                            <form action="/contact-comercial" method="POST">
+                                <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                                <input type="hidden" name="subject" value="Compra - Curso de Ferramentas da qualidade">
+                                <input type="text" name="name" placeholder="Nome ou empresa" />
+                                <input type="email" name="email" placeholder="Endereço de e-mail" />
+                                <input type="text" name="phone" id="phone" placeholder="Telefone: (XX) XXXXX-XXXX">
+                                <textarea name="message" placeholder="Como ficou sabendo da gente?"></textarea>
+                                <input type="submit" value="Enviar" />
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/public/src/views/courses.html">
+
+                            </form>
+                        </div>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideContact(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Logística básica</h2>
+                        <span class="second-text">Entenda o papel da logística no seu negócio</span>
+                    </div>
+                    <div id="img-logistica" class="media-card"></div>
+                    <div class="bottom-card">
+                        <p class="bottom-text">Aprenda a usar a logística para se tornar mais competitivo no mercado</p>
+                        <div class="actions-card">
+                            <button class="actions" onclick="showDetails(this)">Detalhes</button>
+                            <button class="actions" onclick="showContact(this)">Reserve a sua vaga</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="top-card">
+                        <h2 class="title">Detalhes do curso</h2>
+                        <span class="second-text">O objetivo do curso é apresentar de forma simples e prática os conceitos de custos dos produtos ou dos serviços, preço de venda e dimensionar seus lucros.</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="title">Conteúdo do curso</h3>
+                        <ul>
+                            <li>Custos fixos, rateio</li>
+                            <li>Custos variáveis</li>
+                            <li>Custo total</li>
+                            <li>Despesas</li>
+                            <li>Margem de contribuição</li>
+                            <li>Ponto de equilíbrio</li>
+                            <li>Plano de contas</li>
+                        </ul>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideDetails(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="top-card">
+                        <h2 class="title">Contato</h2>
+                        <span class="second-text">Entre em contato conosco para garantir esse curso!</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h2 class="title">Preencha este formulário:</h2>
+                        <div class="form-style-6 item">
+                            <form action="/contact-comercial" method="POST">
+                                <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                                <input type="hidden" name="subject" value="Compra - Curso de Logística básica">
+                                <input type="text" name="name" placeholder="Nome ou empresa" />
+                                <input type="email" name="email" placeholder="Endereço de e-mail" />
+                                <input type="text" name="phone" id="phone" placeholder="Telefone: (XX) XXXXX-XXXX">
+                                <textarea name="message" placeholder="Como ficou sabendo da gente?"></textarea>
+                                <input type="submit" value="Enviar" />
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/public/src/views/courses.html">
+                            </form>
+                        </div>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideContact(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Introdução aos princípios do lean manufacturing</h2>
+                        <span class="second-text">Entenda como funciona o sistema de produção lean manufacturing.</span>
+                    </div>
+                    <div id="img-lean" class="media-card"></div>
+                    <div class="bottom-card">
+                        <p class="bottom-text">Aqui você vai descobrir os sete desperdícios no sistema de produção lean manufacturing, para minimizá-los ou eliminá-los do seu negócio.</p>
+                        <div class="actions-card">
+                            <button class="actions" onclick="showDetails(this)">Detalhes</button>
+                            <button class="actions" onclick="showContact(this)">Reserve a sua vaga</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="top-card">
+                        <h2 class="title">Detalhes do curso</h2>
+                        <span class="second-text">O objetivo do curso é apresentar de forma objetiva e prática os conceitos do sistema Lean Manufacturing.</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="title">Conteúdo do curso:</h3>
+                        <ul>
+                            <li>- Sistema de produção empurrado.</li>
+                            <li>- Sistema de produção puxado.</li>
+                            <li>- Quais são os desperdícios do sistema produtivo.</li>
+                        </ul>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideDetails(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="top-card">
+                        <h2 class="title">Contato</h2>
+                        <span class="second-text">Entre em contato conosco para garantir esse curso!</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h2 class="title">Preencha este formulário:</h2>
+                        <div class="form-style-6 item">
+                            <form action="/contact-comercial" method="POST">
+                                <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                                <input type="hidden" name="subject" value="Compra - Curso de Lean Manufacturing">
+                                <input type="text" name="name" placeholder="Nome ou empresa" />
+                                <input type="email" name="email" placeholder="Endereço de e-mail" />
+                                <input type="text" name="phone" id="phone" placeholder="Telefone: (XX) XXXXX-XXXX">
+                                <textarea name="message" placeholder="Como ficou sabendo da gente?"></textarea>
+                                <input type="submit" value="Enviar" />
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/public/src/views/courses.html">
+                            </form>
+                        </div>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideContact(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Programa 5s</h2>
+                        <span class="second-text">Entenda o que é o programa 5s e como implantá-lo</span>
+                    </div>
+                    <div id="img-5s" class="media-card"></div>
+                    <div class="bottom-card">
+                        <p class="bottom-text">Aprenda de forma prática e objetiva de como implantar o programa e disceminar a cultura de melhoria contínua.</p>
+                        <div class="actions-card">
+                            <button class="actions" onclick="showDetails(this)">Detalhes</button>
+                            <button class="actions" onclick="showContact(this)">Reserve a sua vaga</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="top-card">
+                        <h2 class="title">Detalhes do curso</h2>
+                        <span class="second-text">O objetivo do curso é apresentar de forma simples e prática os conceitos de custos dos produtos ou dos serviços, preço de venda e dimensionar seus lucros.</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="title">Conteúdo do curso</h3>
+                        <ul>
+                            <li>Custos fixos, rateio</li>
+                            <li>Custos variáveis</li>
+                            <li>Custo total</li>
+                            <li>Despesas</li>
+                            <li>Margem de contribuição</li>
+                            <li>Ponto de equilíbrio</li>
+                            <li>Plano de contas</li>
+                        </ul>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideDetails(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="top-card">
+                        <h2 class="title">Contato</h2>
+                        <span class="second-text">Entre em contato conosco para garantir esse curso!</span>
+                    </div>
+                    <div class="bottom-card">
+                        <h2 class="title">Preencha este formulário:</h2>
+                        <div class="form-style-6 item">
+                            <form action="/contact-comercial" method="POST">
+                                <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                                <input type="hidden" name="subject" value="Compra - Curso de Programa 5s">
+                                <input type="text" name="name" placeholder="Nome ou empresa">
+                                <input type="email" name="email" placeholder="Endereço de e-mail">
+                                <input type="text" name="phone" id="phone" placeholder="Telefone: (XX) XXXXX-XXXX">
+                                <textarea name="message" placeholder="Como ficou sabendo da gente?"></textarea>
+                                <input type="submit" value="Enviar" />
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/public/src/views/courses.html">
+
+                            </form>
+                        </div>
+                        <div class="actions-card">
+                            <button class="actions" onclick="hideContact(this)">Fechar</button>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>Sobre nós</h2>
+                <div class="content">
+                    <p>Nós temos como objetivo deixar você ou sua empresa mais competitiva no mercado, através de cursos e treinamentos. Se não encontrou o que queria tente o atendimento personalizado.</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Endereço e Contato</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Jacareí, São Paulo</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone alt"></span>
+                        <span class="text">(12) 99676-5146 - Whatsapp</span>
+                    </div>
+                    <div class="rate-us">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">sac@oactreinamentos.com.br</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Avalie-nos</h2>
+                <div class="content">
+                    <form action="/avaliacao" method="POST">
+                        <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                        <input type="hidden" name="subject" value="Avaliação">
+
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Mensagem *</div>
+                            <textarea name="message" id="message" cols="25" rows="2"></textarea>
+                        </div>
+                        <div class="btn-footer">
+                            <button type="submit">Enviar</button>
+                        </div>
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/public/src/views/courses.html">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/animation.js"></script>
+</body>
+</html>

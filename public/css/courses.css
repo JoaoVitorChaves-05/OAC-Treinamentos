@@ -1,0 +1,198 @@
+main {
+    width: 100%;
+}
+
+.title-page {
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(49, 145, 223), darkblue);
+    color: white;
+    height: auto;
+    margin-bottom: 2.5%;
+
+    padding: 10px 0px 10px 0px;
+}
+
+
+.content-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 504px;
+
+    margin: 40px 0 40px 0;
+
+}
+
+.details-card, .contact-card {
+    position: absolute;
+    opacity: 0;
+    top: 18px;
+
+    z-index: -1;
+
+    background: #fff;
+    border-radius: 20px;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.contact-card .bottom-card {
+    padding-top: 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px #26395338;
+    width: 400px;
+}
+
+.title {
+    color: rgb(0, 0, 105);
+}
+
+.second-text {
+    margin-top: 2.5%;
+    color: #828fa1;
+}
+
+.media-card {
+    /*background: url(../images/logistica-basica.jpg) center/cover;*/
+    height: 200px;
+    width: 100%;
+}
+
+/* Images */
+#img-custos {
+    background: url(../images/Slider/custos-fixos-e-variaveis-550x324.jpg) center/cover;
+}
+
+#img-ferramentas {
+    background: url(../images/Slider/ferramentas-de-qualidade-550x309.jpg) center/cover;
+}
+
+#img-logistica {
+    background: url(../images/Slider/logistica-basica-550x367.jpg) center/cover;
+}
+
+#img-lean {
+    background: url(../images/Slider/lean-manufacturing-550x355.jpg) center/cover;
+}
+
+#img-5s {
+    background: url(../images/Slider/programa-5s-550x367.jpg) center/cover;
+}
+
+.top-card {
+    padding: 20px;
+}
+
+.bottom-card {
+    padding: 20px;
+}
+
+.actions {
+    background: none;
+    border: none;
+    color: #00aeff;
+}
+
+.list-contact {
+    margin-bottom: 2.5%;
+}
+
+@media (min-width: 425px) {
+    .details-card, .contact-card {
+        width: 400px;
+    }
+}
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+    height: 100%;
+	margin: 0px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+
+
+.form-style-6 h1{
+	background: rgb(0, 122, 223);
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #43b0d1;
+	padding: 3%;
+	border: 1px solid #438cd1;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: rgb(49, 145, 223);
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: rgb(0, 122, 223);
+}
+
+.form-style-6 textarea {
+    height: auto;
+}

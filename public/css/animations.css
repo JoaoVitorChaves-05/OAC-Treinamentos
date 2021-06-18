@@ -1,0 +1,87 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear-details {
+    from {
+        z-index: -1;
+        opacity: 0;
+    }
+    to {
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes hide-course {
+    from {
+        z-index: 1;
+        opacity: 1;
+    } to {
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+@keyframes appear-course {
+    from {
+        z-index: -1;
+        opacity: 0;
+    } to {
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+/* Animations to window size <= 1320 */
+.animate-appear-details {
+    animation-name: appear-details;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animate-hide-details {
+    animation-name: hide-details;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animate-appear-course {
+    animation-name: appear-course;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animate-hide-course {
+    animation-name: hide-course;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

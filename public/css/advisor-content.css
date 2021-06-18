@@ -1,0 +1,51 @@
+body {
+    background: rgb(255, 255, 255)
+}
+
+.advisor {
+    background-color: rgb(255, 255, 255);
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+
+    /*border: 2px solid rgb(49, 145, 223);*/
+    border-radius: 20px;
+}
+
+#adivisor-image {
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.item {
+	margin: 5px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+    height: 6.5px;
+    background-color: rgb(49, 145, 223);
+    border: none;
+
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    body .adivisor {
+        width: 0;
+    }
+    #adivisor-image {
+        width: 90%;
+    }
+}

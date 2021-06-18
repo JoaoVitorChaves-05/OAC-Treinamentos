@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid-layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/advisor-content.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <script src="scripts/nav-bar.js" defer></script>
+    <script src="scripts/teste.js"></script>
+    <title>OAC - Cursos e Treinamentos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">OAC - Cursos e Treinamentos</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a class="item-active" href="/">Início</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                <li><a href="/contato">Atendimento Personalizado</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr id="hr-navbar">
+    <div class="container animate-up">
+        <div id="main-content">
+            <div id="main-text">
+                <h1>Venha alavancar sua carreira!</h1>
+                <p>Aqui tem tudo que você ou sua empresa precisam!
+                    Contamos com diversos cursos da área de logística
+                    e gestão de negócios.
+                </p>
+                <div id="button">
+                    <a href="/cursos"><button class="btn"type="button">Conheça nossos cursos</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-block">
+        <div id="slider">
+            <img name="Curso de custos fixos e variáveis" class="selected" src="../../images/Slider/custos-fixos-e-variaveis-550x324.jpg">
+            <img name="Curso de ferramentas da qualidade" src="../../images/Slider/ferramentas-de-qualidade-550x309.jpg" alt="">
+            <img name="Curso dos princípios do lean manufacturing" src="../../images/Slider/lean-manufacturing-550x355.jpg" alt="">
+            <img name="Curso de logistica básica" src="../../images/Slider/logistica-basica-550x367.jpg" alt="">
+            <img name="Curso sobre o programa 5s" src="../../images/Slider/programa-5s-550x367.jpg" alt="">
+        </div>
+        <div class="info">
+            <h1>Curso de custos fixos e variáveis</h1>
+        </div>
+    </div>
+    <div class="advisor-container">
+
+    </div>
+    <div class="advisor">
+        <div class="item">
+            <h1>Conheça seu orientador</h1>
+            <hr>
+            <div class="image-container">
+                <img id="adivisor-image" src="../../images/orientador.jpg" alt="">
+            </div>
+            <p>
+                Seja bem vindo(a) ao meu site. Meu nome é Osvaldo, eu
+                tenho 20 anos de experiência em Logística Industrial,
+                armazenagem e distribuição. Já dou aula desde 2008. Meu
+                objetivo é proporcionar a você ou sua empresa toda a
+                experiência que tive de forma prática.
+            </p>
+            <img src="../../images/Icons/graduation.png" alt="">
+            <ul>
+                <li>Titulação principal: Bacharel em Administração de Empresas (UNIP)</li>
+                <li>MBA Gestão Estratégica de Negócios (Anhanguera)</li>
+                <li>MBA Lean Manufacturing (Anhanguera)</li>
+            </ul>
+            <img src="../../images/Icons/work.png" alt="">
+            <p>
+                Principais empresas : EMEGE Moinhos, Petybom, AMBEV, LTA Transporte e Armazenagem, Citroen e SENAC
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>Sobre nós</h2>
+                <div class="content">
+                    <p>Nós temos como objetivo deixar você ou sua empresa mais competitiva no mercado, através de cursos e treinamentos. Se não encontrou o que queria tente o atendimento personalizado.</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Endereço e Contato</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Jacareí, São Paulo</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone alt"></span>
+                        <span class="text">(12) 99676-5146 - Whatsapp</span>
+                    </div>
+                    <div class="rate-us">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">sac@oactreinamentos.com.br</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Avalie-nos</h2>
+                <div class="content">
+                    <form action="/avaliacao" method="POST">
+                        <input type="hidden" name="accessKey" value="70690e59-fe3e-4a04-b79b-601146ddf94f">
+                        <input type="hidden" name="subject" value="Avaliação">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Mensagem *</div>
+                            <textarea name="message" id="message" cols="25" rows="2"></textarea>
+                        </div>
+                        <div class="btn-footer">
+                            <button type="submit">Enviar</button>
+                        </div>
+                        <input type="hidden" name="redirectTo" value="/">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/slider.js"></script>
+</body>
+</html>
